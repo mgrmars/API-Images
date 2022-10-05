@@ -11,33 +11,37 @@
 html {
     font-size: 62.5%;
     line-height: 2.5em;
-
     font-family: 'Inter', 'Arial', 'Helvetica', 'Roboto', sans-serif;
 }
 
 body {
+    text-align: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 4rem 4rem;
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 4rem;
 }
 
 h1 {
     margin-bottom: 1rem;
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 p {
     display: block;
     font-size: 1.8rem;
     margin-bottom: 3rem;
-    color: hsla(0, 0%, 0%, 70%);
+    color: hsla(0, 0%, 0%, 80%);
 }
 
+/*
 a {
     font-weight: 600;
     text-decoration: none;
@@ -48,7 +52,9 @@ a:hover {
     text-decoration: underline;
     color: hsla(0, 0%, 0%, 90%);
 }
+*/
 
+/* Estilo de la imagen */
 .canva {
     display: block;
     width: fit-content;
@@ -59,11 +65,12 @@ a:hover {
 .canva #image {
     max-width: 100%;
     height: 100%;
-    border: 1px solid hsla(0, 0%, 0%, 10%);
     border-radius: 1rem;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 5rem .06rem rgba(0, 0, 0, 0.08);
 }
 
-/* Button style reset */
+/* Formateo de los estilos del botón */
 button {
     font-family: inherit;
     background: none;
@@ -71,6 +78,7 @@ button {
     padding: 0;
 }
 
+/* Estilos del botón */
 button {
     font-size: 1.8rem;
     font-weight: 600;
@@ -79,10 +87,13 @@ button {
     align-items: center;
     justify-content: space-around;
     border-radius: 1rem;
-    color: hsl(214, 80%, 56%);
+    padding: 1rem 2rem;
+    color: hsl(214, 80%, 99%);
+    background-color: hsl(214, 80%, 56%);
+    width: fit-content;
 }
 
 button:hover {
-    text-decoration: underline;
-    color: hsl(214, 80%, 66%);
+    color: hsl(214, 80%, 97%);
+    background-color: hsl(214, 80%, 54%);
 }
