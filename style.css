@@ -91,9 +91,14 @@ button {
     color: hsl(214, 80%, 99%);
     background-color: hsl(214, 80%, 56%);
     width: fit-content;
+    transition: all 200ms ease-in-out;
 }
 
 button:hover {
     color: hsl(214, 80%, 97%);
+    transition: all 200ms ease-in-out;
     background-color: hsl(214, 80%, 54%);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 0.4rem 0.01rem rgba(0, 0, 0, .1);
+    
 }
